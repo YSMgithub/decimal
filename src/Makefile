@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-c
-LDFLAGS=-lcheck -lm
+LDFLAGS=-lcheck -lm -lsubunit
 TESTSRC=test_cases/test.c
 LIBSRC=$(filter-out $(TESTSRC), $(wildcard *.c))
 TESTOBJ=$(TESTSRC:.c=.o)
